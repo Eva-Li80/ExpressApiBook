@@ -11,10 +11,28 @@ Content-Type: application/json
 
    {
     
-    "title": "will Hunting",
-    "author": "Matt Damon and Ben Affleck",
-    "isbn": "9780571196111",
-    "pages": "192",
-    "published": "2022"
-  }
+    "title": "pearl harbor",
+    "author": "Roberta Wohlstetter",
+    "isbn": "9780804705981",
+    "pages": "428",
+    "published": "1962"
+   }
+
+
+###
+
+PUT http://localhost:3000/api/books/1
+Content-Type: application/json
+
+{
+  "title": "pearl harborrrr",
+    "author": "Roberta Wohlstetter",
+    "isbn": "9780804705981",
+    "pages": "428",
+    "published": "1962"
+}
+
+###
+DELETE http://localhost:3000/api/books/1
+Content-Type: application/json
 

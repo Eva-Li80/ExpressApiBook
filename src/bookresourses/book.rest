@@ -13,7 +13,6 @@ POST http://localhost:3001/api/books/
 Content-Type: application/json
 
    {
-    
     "title": "pearl harbor",
     "author": "Roberta Wohlstetter",
     "isbn": "9780804705981",
@@ -39,6 +38,6 @@ Content-Type: application/json
 ###
 
 //Delete a book
-DELETE http://localhost:3001/api/books/1
+DELETE http://localhost:3001/api/books/2
 Content-Type: application/json
 

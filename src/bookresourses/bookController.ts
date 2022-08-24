@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
+import { Book } from "./bookInterface";
 
-export let books: any = [
+let books: Book[] = [
   {
     id: 1,
     title: "The green mile",

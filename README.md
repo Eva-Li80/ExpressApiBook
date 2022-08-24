@@ -21,4 +21,6 @@ bookController = flyttade sedan arrayen med datan till bookController filen och 
 bookrouter = här tar jag in metoderna i router mappen för att ha alla endpoints i en och samma fil
 book.rest = i denna fil testar man de olika endpointsen
 
+starta projectet med: npm run dev
+
 Av Eva-i Nätynki Bodén

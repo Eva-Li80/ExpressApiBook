@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { Book } from "./bookInterface";
 
 let books: Book[] = [
+  /*takes in interface. Added 3 books so that there is something in the array from the start*/
   {
     id: 1,
     title: "The green mile",
@@ -28,6 +29,7 @@ let books: Book[] = [
   },
 ];
 
+/*all methods*/
 export const getAllBooks = (req: Request, res: Response) => {
   res.status(200).send(books);
 };

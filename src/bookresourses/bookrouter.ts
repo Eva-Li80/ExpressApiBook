@@ -8,6 +8,7 @@ import {
   deleteBook,
 } from "./bookController";
 
+/*all endpoints*/
 const bookRouter = express.Router();
 bookRouter.get("/", getAllBooks);
 bookRouter.get("/:id", getBookId);

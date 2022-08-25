@@ -1,3 +1,6 @@
+
+
+
 //Get all books 
 GET  http://localhost:3000/api/books
 
@@ -16,8 +19,8 @@ Content-Type: application/json
     "title": "Greenlights",
     "author": "Matthew McConaughey",
     "isbn": "9781472280848",
-    "pages": "",
-    "published": ""
+    "pages": "408",
+    "published": "2020"
    }
 
 

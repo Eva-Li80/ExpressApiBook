@@ -31,7 +31,7 @@ let books: Book[] = [
 
 /*all methods*/
 export const getAllBooks = (req: Request, res: Response) => {
-  res.status(200).send(books);
+  res.send(books);
 };
 
 export const getBookId = (req: Request, res: Response) => {
@@ -44,7 +44,8 @@ export const getBookId = (req: Request, res: Response) => {
 
 export const createBook = (req: Request, res: Response) => {
   if (!req.body.title || req.body.title.length < 3) {
-    res.status(404).send("Must contain at least 3 letters..");
+    /*if letter are less then 3 in title you get a message..Must contain at least 3 letters..*/
+    res.status(404).send("Title must contain at least 3 letters..");
     return;
   }
   const book = {
@@ -68,9 +69,7 @@ export const updateBook = (req: Request, res: Response) => {
     books[index] = updatebook;
     res.send(updatebook);
   } else {
-    res
-      .sendStatus(404)
-      .send("book id could not be found..book is not updated!");
+    res.sendStatus(404).send();
   }
 };
 

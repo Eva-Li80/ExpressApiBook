@@ -27,7 +27,7 @@ Content-Type: application/json
 ###
 
 //Update a book
-PUT http://localhost:3000/api/books/1
+PUT http://localhost:3000/api/books/3
 Content-Type: application/json
 
 {
@@ -41,6 +41,6 @@ Content-Type: application/json
 ###
 
 //Delete a book
-DELETE http://localhost:3000/api/books/2
+DELETE http://localhost:3000/api/books/1
 Content-Type: application/json
 
